@@ -24,7 +24,7 @@ def main():
 
     # check if any didn't match
     for row in rows:
-        assert(row["match"])
+        assert row["match"], f"multiplier mismatch for row {row}"
 
 if __name__ == "__main__":
     main()
