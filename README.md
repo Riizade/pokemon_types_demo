@@ -5,8 +5,13 @@ This repository contains various demos for instantiating Pokemon type advantages
 
 This repository only contains Generation 1 Pokemon types, but can be easily extended.
 
+This project is intended solely to provide a demonstration of various implementation approaches for a very simple task, along with some basic unit tests. This is an aid for introducing computer science students to concepts such as abstraction and unit testing to aid in the transition from computer science/programming knowledge to software engineering knowledge.
+
 Similar Projects
 =====
+
+The projects listed below accomplish similar tasks to the one in this repository, and are worth inspecting to explore alternative implementation/design approaches.
+
 - https://github.com/Spimtav/Pokemon-Type-Calculator
 - https://github.com/awcrotwell/pokemon-type-calculator
 - https://gist.github.com/kkjdroid/efbf978a48eddb82978089f0a2fed8db
