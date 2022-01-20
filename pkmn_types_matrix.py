@@ -3,7 +3,8 @@ from typing import Dict, Tuple
 
 from pkmn_type_enum import *
 
-# https://bulbapedia.bulbagarden.net/wiki/Type/Type_chart#Generation_I
+# source: https://bulbapedia.bulbagarden.net/wiki/Type/Type_chart#Generation_I
+# tuple key is (<attack type>, <defending Pokemon type>)
 damage_effectiveness_map: Dict[Tuple[PokemonType, PokemonType], float] = {
     # NORMAL
     (NORMAL, NORMAL): 1.0,

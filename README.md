@@ -1,9 +1,17 @@
 Pokemon Types Demo
 =====
 
-This repository contains two demos for instantiating Pokemon type advantages/disadvantages.
+This repository contains various demos for instantiating Pokemon type advantages/disadvantages.
 
 This repository only contains Generation 1 Pokemon types, but can be easily extended.
+
+Similar Projects
+=====
+- https://github.com/Spimtav/Pokemon-Type-Calculator
+- https://github.com/awcrotwell/pokemon-type-calculator
+- https://gist.github.com/kkjdroid/efbf978a48eddb82978089f0a2fed8db
+- https://github.com/DerekParry/pkmn_type_calc/blob/master/pkmn_type_calc.py
+- https://github.com/PokeAPI/pokeapi (https://github.com/PokeAPI/pokeapi/blob/master/data/v2/csv/type_efficacy.csv)
 
 Setup
 =====

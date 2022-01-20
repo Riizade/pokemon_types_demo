@@ -8,10 +8,12 @@ from pkmn_type_enum import *
 class PKMNTypeMultipliers:
     multipliers: Dict[PokemonType, float]
 
-# https://bulbapedia.bulbagarden.net/wiki/Type/Type_chart#Generation_I
+# source: https://bulbapedia.bulbagarden.net/wiki/Type/Type_chart#Generation_I
+
+# name describes attack type
 NORMAL_MULTIPLIERS = PKMNTypeMultipliers(
     {
-        NORMAL: 1.0,
+        NORMAL: 1.0, # entries describe defending Pokemon type
         FIGHTING: 1.0,
         FLYING: 1.0,
         POISON: 1.0,
