@@ -312,7 +312,7 @@ DRAGON_MULTIPLIERS = PKMNTypeMultipliers(
 )
 
 def damage_effectiveness(attacking_type: PokemonType, defending_type: PokemonType) -> float:
-    multipliers: Dict[PokemonType, PKMNTypeMultipliers] = {
+    attacking_types: Dict[PokemonType, PKMNTypeMultipliers] = {
         NORMAL: NORMAL_MULTIPLIERS,
         FIGHTING: FIGHTING_MULTIPLIERS,
         FLYING: FLYING_MULTIPLIERS,
@@ -330,4 +330,4 @@ def damage_effectiveness(attacking_type: PokemonType, defending_type: PokemonTyp
         DRAGON: DRAGON_MULTIPLIERS,
     }
 
-    return multipliers[attacking_type].multipliers[defending_type]
+    return attacking_types[attacking_type].multipliers[defending_type]
