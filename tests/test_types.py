@@ -11,7 +11,7 @@ class TestTypeEffectiveness(unittest.TestCase):
             for def_type in PokemonType:
                 matrix_result = dmg_eff_matrix(atk_type, def_type)
                 structs_result = dmg_eff_structs(atk_type, def_type)
-                self.assertEqual(matrix_result, structs_result, f"Damage values did not match for {atk_type} -> {def_type} (matrix: {matrix_result}, structs: {structs_result}")
+                self.assertEqual(matrix_result, structs_result, f"Damage values did not match for {atk_type} -> {def_type} (matrix: {matrix_result}, structs: {structs_result})")
 
     def test_various(self):
         # tuples of (attack type, defending type, expected damage effectiveness)
