@@ -1,5 +1,4 @@
-Pokemon Types Demo
-=====
+# Pokemon Types Demo
 
 This repository contains various demos for instantiating Pokemon type advantages/disadvantages.
 
@@ -7,8 +6,7 @@ This repository only contains Generation 1 Pokemon types, but can be easily exte
 
 This project is intended solely to provide a demonstration of various implementation approaches for a very simple task, along with some basic unit tests. This is an aid for introducing computer science students to concepts such as abstraction and unit testing to aid in the transition from computer science/programming knowledge to software engineering knowledge.
 
-Similar Projects
-=====
+# Similar Projects
 
 The projects listed below accomplish similar tasks to the one in this repository, and are worth inspecting to explore alternative implementation/design approaches.
 
@@ -18,18 +16,22 @@ The projects listed below accomplish similar tasks to the one in this repository
 - https://github.com/DerekParry/pkmn_type_calc/blob/master/pkmn_type_calc.py
 - https://github.com/PokeAPI/pokeapi (https://github.com/PokeAPI/pokeapi/blob/master/data/v2/csv/type_efficacy.csv)
 
-Setup
-=====
+# Setup
+
 - `pipenv install`
 
-Run
-=====
-- `pipenv run python main.py`
+# Run
 
-Project Layout
-=====
+- `pipenv run cli`
+
+# Help
+
+- `pipenv run cli --help`
+
+# Project Layout
+
 - `pkmn_type_enum.py` contains a simple enum definition containing each of the Pokemon types, as well as shorthand names for each to avoid verbosity when using a lot of type names during defining damage multipliers.
 - each `pkmn_types_<name>.py` file contains a definition for all Pokemon damage multipliers in a particular format, as well as a function with the signature `def damage_effectiveness(attacking_type: PokemonType, defending_type: PokemonType) -> float`
-    - `pkmn_types_matrix.py` defines the damage multipliers in a format of `Dict[(attacking_type, defending_type), float]`
-    - `pkmn_types_structs.py` defines the damage multipliers in a dataclass for each type which contains a map of `Dict[defending_type, float]`
+  - `pkmn_types_matrix.py` defines the damage multipliers in a format of `Dict[(attacking_type, defending_type), float]`
+  - `pkmn_types_structs.py` defines the damage multipliers in a dataclass for each type which contains a map of `Dict[defending_type, float]`
 - `main.py` simply iterates over all type combinations and prints out the information about multipliers from each `pkmn_types_<name>.py` definition; if the multipliers don't match between the definitions, the program will crash after printing
