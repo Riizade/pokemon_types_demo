@@ -1,3 +1,4 @@
+from __future__ import annotations
 from enum import Enum
 
 class PokemonType(Enum):
@@ -16,6 +17,18 @@ class PokemonType(Enum):
     PSYCHIC = 12
     ICE = 13
     DRAGON = 14
+
+    @classmethod
+    def from_str(cls, s: str) -> PokemonType:
+      for pokemon_type in PokemonType:
+          if s.upper() == str(pokemon_type):
+              return pokemon_type
+
+      raise ValueError(f"Pokemon type {s} is unrecognized")
+
+    def __str__(self) -> str:
+        return self._name_.upper().replace('POKEMONTYPE.', '')
+
 
 
 # alias these types to shorter names for more concise syntax
