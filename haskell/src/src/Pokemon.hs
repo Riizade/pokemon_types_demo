@@ -16,5 +16,4 @@ module Pokemon (PokemonType) where
         ELECTRIC |
         PSYCHIC |
         ICE |
-        DRAGON deriving (Eq, Show) 
-    
+        DRAGON deriving (Eq, Show)
